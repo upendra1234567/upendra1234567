@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color:aliceblue;
+    
+        }
+    </style>
+
+</head>
+
+
+<body background="blue" align="center">
+    <script>
+        function add()
+        {
+            var a=parseInt(document.getElementById("id1").value);
+            var b=parseInt(document.getElementById("id2").value);
+            var z=a+b;
+            document.getElementById("p1").innerHTML=z;
+    
+        }
+        function sub(){
+    
+       
+        var a=document.getElementById("id1").value;
+        var b=document.getElementById("id2").value;
+        var sub1=a-b;
+            document.getElementById("p1").innerHTML=sub1;
+        }
+    
+        function mul(){
+    
+       
+    var a=document.getElementById("id1").value;
+    var b=document.getElementById("id2").value;
+    var x=a*b;
+        document.getElementById("p1").innerHTML=x;
+    }
+    
+    function  div(){
+    
+      var y; 
+    var a=parseInt(document.getElementById("id1").value);
+    var b=parseInt(document.getElementById("id2").value);
+    y=a/b;
+        document.getElementById("p1").innerHTML=y;
+    
+    }
+    
+    </script>
+    <br><br>
+    <h1>calculator</h1>
+    <p style="font-size: 30"style="color: aliceblue;">Enter Number
+         <input type="" name="" id="id1" placeholder="enter number 1"
+        style="height: 25px;width: 300"></p>
+
+        <p style="font-size: 30"style="color: aliceblue;">Enter Number
+            <input type="" name="" id="id2" placeholder="enter number 2"
+            style="height: 25px;width: 300"></p>
+
+  
+
+    <button onclick="add()">Add</button>
+    <button onclick="sub()">Sub</button>
+    <button onclick="mul()">Multi</button>
+    <button onclick="div()">Divi</button>
+
+    
+    <br>
+    <p id="p1" style="font-size: 30; color: rgb(168, 21, 21)">Answer</p>
+    
+</body>
+</html>
